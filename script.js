@@ -37,3 +37,10 @@ function convertCurrency(amount, price, symbol) {
         alert("Não foi possível converter Tente novamente mais tarde")   
     }
 }
+
+function formatCurrencyBRL(value) {
+    return Number(value).toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL"
+    })
+}
